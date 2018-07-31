@@ -4,6 +4,7 @@ export function Sudoku() {
   this.masterArray = [];
   this.rowsArray = [];
   this.columnsArray = [];
+  this.nonetsArray = [];
   this.buildRows();
   this.buildColumns();
 }
@@ -42,4 +43,19 @@ Sudoku.prototype.validateNumbers = function (arrays) {
     }
   }
   return valid;
+};
+
+Sudoku.prototype.buildNonets = function (startValue) {
+  for(var h = 0; h < 9; h += 3) {
+    var nonetBlock = [];
+    for(var i = 0; i < 9; i++) {
+      for(var j = h; j < (h + 3); j++) {
+        nonetBlock.push(this.rowsArray[i][j])
+      }
+      if (nonetBlock.length === 9) {
+        this.nonetsArray.push(nonetBlock.map(x => x));
+        nonetBlock = [];
+      }
+    }
+  }
 };
