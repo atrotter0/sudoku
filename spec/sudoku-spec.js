@@ -20,4 +20,10 @@ describe('Sudoku', function() {
     expect(sudoku.validateNumbers(sudoku.columnsArray)).toEqual(true);
   });
 
+  it('should check if all rows and columns are unique', function() {
+    expect(sudoku.checkUniqueness(sudoku.rowsArray)).toEqual(true);
+    expect(sudoku.checkUniqueness(sudoku.columnsArray)).toEqual(true);
+    sudoku.buildNonets();
+    expect(sudoku.checkUniqueness(sudoku.nonetsArray)).toEqual(false);
+  });
 });
