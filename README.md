@@ -1,10 +1,12 @@
-# Project Title
+# Sudoku
 
-#### Epicodus Intro to Programming: Lesson, Date
+#### Epicodus JavaScript exercise, 08.06.18 - 08.07.18
 
-#### By Your Name Here
+#### By Abel Trotter, Kelli Brooke, and Nate Cottle
 
 ## Description
+
+A simple Sudoku game built with JavaScript.
 
 ## Setup on OSX
 
@@ -26,12 +28,17 @@
 ## Technologies Used
 
 * JavaScript
-* jQuery 3.3.1
 * Node.js
+* jQuery 3.3.1
 * Bootstrap 4.1.3
+* Babel
+* Webpack
+* ESLint
+* Jasmine
+* Karma
 
 ## License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Your Name Here**
+Copyright (c) 2018 **Abel Trotter, Kelli Brooke, and Nate Cottle**
