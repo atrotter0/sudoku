@@ -1,6 +1,6 @@
 # Sudoku
 
-#### Epicodus JavaScript exercise, 08.06.18 - 08.07.18
+#### Epicodus JavaScript exercise, 08.03.18
 
 #### By Abel Trotter, Kelli Brooke, and Nate Cottle
 
